@@ -4,7 +4,7 @@ services:
 
   atlas-server:
     build: ./atlas
-    image: wbaa/rokku-dev-apache-atlas
+    image: pico/apache-atlas
     volumes:
       - ./atlas/resources/1000-Hadoop:/opt/atlas/models/1000-Hadoop
     ports:
