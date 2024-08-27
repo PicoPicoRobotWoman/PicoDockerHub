@@ -1,0 +1,82 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+target/
+
+# VSCode
+.vscode/
+
+# Maven
+target/
+
+# Logs
+logs/
+*.log
+
+# Docker-specific files and folders
+**/.docker/
+**/*.bak/
+**/*.bak
+**/tmp/
+**/cache/
+**/temp/
+**/logs/
+.docker-compose-override.yml
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# Class files
+*.class
+
+# JAR files
+*.jar
+*.war
+*.ear
+
+# Compiled Dynamic libraries
+*.dll
+*.so
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Python virtual environment
+venv/
+__pycache__/
+
+# Python specific
+*.pyc
+*.pyo
+*.pyd
+
+# Scala specific
+*.class
+*.log
+.cache/
+project/
+target/
+dist/
+.idea_modules/
+src/main/resources/application.conf
+
+# IDE specific
+*.sw?
+*.swo
+*.bak
+*.backup
+*.tmp
