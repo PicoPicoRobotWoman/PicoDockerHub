@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+
+  postgres:
+    image: postgres 
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=airflow
+    restart: always
+    ports:
+      - 5432:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  airflow: 
+    build: .
+    depends_on:
+      - postgres
+    ports:
+      - 8001:8080
+    volumes:
+      - ./airflow/dags:/usr/local/airflow/dags
+      - ./airflow/plugins:/root/airflow/plugins
+      - logs:/usr/local/airflow/logs
+
+volumes:
+  pgdata:
+  logs:
